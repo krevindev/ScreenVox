@@ -1,0 +1,143 @@
+#SignInPage {
+    height: 100vh;
+
+    /* Background */
+
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(167.04deg, #FFB43A 3.2%, #DE331C 65.41%);
+    position: relative;
+
+}
+
+#signin-page-head {
+    width: 100%;
+    height: 30vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signin-page-head-content {
+    width: 80%;
+    height: 80%;
+    max-width: 300px;
+    background: #41424F;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signin-page-head-content-inner {
+    border-radius: inherit;
+    width: 90%;
+    height: 80%;
+    background: #1E1E1E;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signin-page-head-content-inner h1 {
+    text-align: center;
+
+    /* SCREEN VOX */
+
+    width: 158px;
+    height: 94px;
+    left: 78px;
+    top: 47px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 39px;
+    line-height: 47px;
+    text-align: center;
+
+    background: linear-gradient(137.81deg, #FEB239 3.92%, #DE331C 114.13%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+
+}
+
+#form-container {
+    background: #41424F;
+    height: 70%;
+    width: 100%;
+    bottom: 0;
+
+    border-top-left-radius: 100px;
+    position: relative;
+}
+
+#form-container-inner {
+    background: #1E1E1E;
+    height: 97%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+
+    border-top-left-radius: 100px;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-container-inner form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+
+}
+
+#form-container-inner form input,
+#form-container-inner form button {
+    width: 100%;
+    height: 50px;
+
+    font-size: 20px;
+
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    margin: 10px;
+}
+
+#form-container-inner form input:focus,
+#form-container-inner form button:focus {
+    border: 1px solid white;
+}
+
+#form-container-inner form input {
+    color: white;
+    background: none;
+    border: 1px solid #41424F;
+}
+
+#form-container-inner form button {
+    background: linear-gradient(178.36deg, #FFB43A 1.39%, rgba(222, 51, 28, 0.75) 173.48%);
+
+    color: #1E1E1E;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 500;
+}

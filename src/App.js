@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 import Home from './pages/home/Home';
 import Header from './components/Header';
-import SignInPage from './pages/signin/SignInPage';
+import SignInPage from './pages/home/signin/SignInPage';
 
 import './localStorage/dummySession';
 import { session } from './localStorage/dummySession';
@@ -21,8 +21,6 @@ function App() {
   return (
     <Router>
       <div id="App">
-
-        <Header />
 
         <Routes>
           <Route path='/' element={<Home />} />
