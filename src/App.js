@@ -1,25 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
 
+import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+
+import Home from './pages/home/Home';
+import Header from './components/Header';
+import SignInPage from './pages/signin/SignInPage';
+
+import './localStorage/dummySession';
+import { session } from './localStorage/dummySession';
+
 function App() {
+
+  const [state, setState] = useState({
+    isHeaderVisible: true,
+    location: '/',
+    isLoggedIn: session['isLoggedIn']
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div id="App">
+
+        <Header />
+
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/signin' element={<SignInPage />} />
+        </Routes>
+
+      </div>
+    </Router>
   );
-}
+};
+
 
 export default App;
