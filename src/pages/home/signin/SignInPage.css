@@ -34,6 +34,8 @@
     align-items: center;
 }
 
+
+
 #signin-page-head-content-inner {
     border-radius: inherit;
     width: 90%;
@@ -78,6 +80,9 @@
 
     border-top-left-radius: 100px;
     position: relative;
+}
+
+#SignInPage.reg-form #form-container {
 }
 
 #form-container-inner {
@@ -131,7 +136,6 @@
 }
 
 #form-container-inner form button {
-    background: linear-gradient(178.36deg, #FFB43A 1.39%, rgba(222, 51, 28, 0.75) 173.48%);
 
     color: #1E1E1E;
 
@@ -140,4 +144,8 @@
     justify-content: center;
 
     font-weight: 500;
+}
+
+#form-container-inner form .form-submit-btn {
+    background: linear-gradient(178.36deg, #FFB43A 1.39%, rgba(222, 51, 28, 0.75) 173.48%);
 }
